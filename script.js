@@ -1,10 +1,13 @@
 const display = document.getElementById("display");
+
 function appendValue(value) {
     display.value += value;
 }
+
 function clearDisplay() {
     display.value = "";
 }
+
 function calculate() {
     try {
         
@@ -14,6 +17,7 @@ function calculate() {
         clearDisplay();
     }
 }
+
 
 document.addEventListener('keydown', function(event) {
     const allowedKeys = "0123456789+-*/.()";
@@ -31,4 +35,5 @@ document.addEventListener('keydown', function(event) {
         clearDisplay();
     }
 });
+
 
